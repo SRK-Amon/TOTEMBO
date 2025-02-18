@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }
 .container{
-    max-width: 1140px;
+    max-width: 1350px;
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
@@ -26,23 +26,24 @@ li{
     padding-top: 50px;
 }
 .nav_box{
-
     display: flex;
-    border-bottom: 2px solid ;
+    justify-content: center;
+    border-bottom: 2px solid  #323232;
     border-radius: 2px;
-    padding-bottom: 20px;
+    padding: 0 12px 20px;
+    gap: 100px;
+
 }
 .nav_logo{
     font-family: var(--m400);
     font-size: 32px;
     font-weight: 700;
     line-height: 23px;
-    margin-right: 25px;
     color: #323232;
     }
 .nav_list{
     display: flex;
-    gap: 30px;
+    gap: 42px;
 }
 .nav_link{
     font-family: var(--m400);
@@ -52,8 +53,7 @@ li{
     color: #323232;
 }
 .nav_icons{
-    display: flex;
-    margin-left: 70px;
+    display: flex;  
     gap: 40px;
 }
 .nav_language{
@@ -65,29 +65,43 @@ li{
     color: #323232;
 }
 .intro_box{
-    display: grid;
+    display: flex;
     gap: 20px;
-    padding-top: 40px;
-    padding-bottom: 60px;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr)
+    padding: 40px 12px 60px;
 }
-.card_box{
-    min-height: 294px;
+.info_left_box{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.left_box,
+.right_box{
+    width: 526px;
+    height: 294px;
     background-color: #E1E1E1;
-    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    gap: 13px;
+    gap: 43px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 6px 6px 15px 0 #84848484;
 }
-.card_box:nth-child(2){
-    grid-row: span 2;
+.right_box{
+    width: 746px;
+    height: 618px;
 }
-.intro_img{
-    width: 146px;
-    height: 174px;
+.left_minibox,
+.right_minibox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+}
+.second_box{
+    gap: 12px;
 }
 .sales{
     padding: 11px 39px;
@@ -101,19 +115,7 @@ li{
     position: absolute;
     top: 16px;
     left: 22px;
-}
-.card_minibox{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 19px;
-}
-.intro_second_img{
-    width: 280px;
-    height: 222px;
-    gap: 30px;
-}
+}   
 .text{
     font-family: var(--m400);
     font-size: 16px;
@@ -122,7 +124,7 @@ li{
 }
 .name{
     font-family: var(--m700);
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 18.29px;
 }
@@ -151,6 +153,8 @@ li{
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(4,1fr);
     gap: 30px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 .clocks_box{
     min-height: 485px;
@@ -238,6 +242,8 @@ li{
     justify-content: space-evenly;
     align-items: center;
     gap: 25px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 .news_left_box{
     background-image: url(../images/bg_leftbox.png);
@@ -308,6 +314,8 @@ li{
 .footer_box{
     display: flex;
     padding: 100px 0 90px 0;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 .footer_list{
     display: flex;
